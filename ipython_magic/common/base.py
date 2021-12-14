@@ -75,6 +75,7 @@ class Base(Magics):
     def __init__(self, shell=None, **kwargs):
         super().__init__(shell, **kwargs)
         self.user_ns = {}
+        self.args = {}
 
     def make_tag(self, tag_name, show_nonprinting, body='', **kwargs):
         if show_nonprinting:
